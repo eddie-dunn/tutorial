@@ -38,6 +38,17 @@ Creating a `virtualenv` on both Linux and OS X is as simple as running:
 
     ~/djangogirls$ python3 -m venv myvenv
 
+
+> __NOTE:__ Initiating the virtual environment on Ubuntu 14.04 like this currently gives the following error:
+
+>     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
+
+> To get around this, use the `virtualenv` command instead.
+
+>     sudo apt-get install python-virtualenv
+>     ~/djangogirls$ virtualenv myvenv
+
+
 ## Working with virtualenv
 
 The command above will create a folder called `myvenv` that contains our virtual environment (basically bunch of folders and files). All we want to do now is starting it by running:
